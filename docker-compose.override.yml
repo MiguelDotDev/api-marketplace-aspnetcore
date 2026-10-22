@@ -13,7 +13,6 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
-      - ASPNETCORE_HTTPS_PORTS=8081
       - ConnectionStrings__Default=Server=bd;Database=EcommerceBd;User Id=sa;Password=ApiOdi192837465.;TrustServerCertificate=True
     ports:
      - "8080:8080"

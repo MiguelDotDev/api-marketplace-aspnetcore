@@ -106,4 +106,4 @@ Este proyecto puede ser probado tanto en Linux como en Windows
 1. **Clona el Repositorio** con `git clone` o **Descarga el Archivo ZIP** del proyecto de este mismo repo
 1. Abre una terminal dentro de la carpeta `api-tienda-web-odi`
 1. Una vez dentro de la carpeta en la terminal, solo ejecuta el comando `docker compose up -d`, el cual creará dos contenedores **Docker**, uno para la **API** y otro para la **BD**. Este proceso puede tomar unos minutos debido a la descarga de la imagen para el contenedor de **SQL Server**
-1. Una vez que los contenedores esten ejecutandose, podrás probar los endpoint de la **API** directamente con **Swagger** al abrir en un navegador `http://localhost:8080/swagger/index`, o también con algun programa externo como **Postman**
+1. Una vez que los contenedores esten ejecutandose, podrás probar los endpoint de la **API** directamente con **Swagger** al abrir en un navegador `http://localhost:8080/swagger/index.html`, o también con algun programa externo como **Postman**
