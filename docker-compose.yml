@@ -1,0 +1,6 @@
+services:
+  api-tienda-web-odi:
+    image: ${DOCKER_REGISTRY-}apitiendawebodi
+    build:
+      context: .
+      dockerfile: api-tienda-web-odi/Dockerfile

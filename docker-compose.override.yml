@@ -1,0 +1,24 @@
+services:
+  bd:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=ApiOdi192837465.
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql_apiOdi:/var/opt/mssql
+
+  api-tienda-web-odi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+      - ConnectionStrings__Default=Server=bd;Database=EcommerceBd;User Id=sa;Password=ApiOdi192837465.;TrustServerCertificate=True
+    ports:
+     - "8080:8080"
+    depends_on:
+      - bd
+
+volumes:
+  mssql_apiOdi:
